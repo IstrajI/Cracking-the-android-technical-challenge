@@ -1,0 +1,41 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "GITHUB_URL", "\"https://api.github.com/\""
+            buildConfigField "Long", "GITHUB_CONNECT_TIMEOUT", "15L"
+            buildConfigField "Long", "GITHUB_READ_TIMEOUT", "15L"
+            buildConfigField "Long", "GITHUB_WRITE_TIMEOUT", "15L"
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "GITHUB_URL", "\"https://api.github.com/\""
+            buildConfigField "Long", "GITHUB_CONNECT_TIMEOUT", "15L"
+            buildConfigField "Long", "GITHUB_READ_TIMEOUT", "15L"
+            buildConfigField "Long", "GITHUB_WRITE_TIMEOUT", "15L"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation project(':core')
+    implementation libraries.retrofit
+    implementation libraries.okHttp
+    implementation libraries.dagger
+    kapt annotationProcessors
+}

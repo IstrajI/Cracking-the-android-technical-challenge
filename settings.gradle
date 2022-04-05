@@ -1,0 +1,8 @@
+rootProject.name = "GitHubSearchChallenge"
+include ':app'
+include ':ui_first_feature'
+include ':domain'
+include ':datasource'
+include ':core'
+include ':ui-components'
+include ':ui-second_feature'

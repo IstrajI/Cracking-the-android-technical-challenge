@@ -1,0 +1,3 @@
+<resources>
+    <string name="feature_second_deep_link">deeplink://com.nikitin.githubsearchchallenge/details_feature_fragment?arg_name={arg_name}</string>
+</resources>

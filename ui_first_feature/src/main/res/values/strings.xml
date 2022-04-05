@@ -1,0 +1,5 @@
+<resources>
+    <string name="feature_one_title">Feature 1</string>
+    <string name="input_title">Search GitHub</string>
+    <string name="button_title">Show results</string>
+</resources>

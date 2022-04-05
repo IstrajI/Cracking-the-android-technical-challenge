@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">@color/bunker_approx</color>
+    <color name="primary_dark">@color/bunker_solid</color>
+    <color name="accent">@color/blue_bayoux</color>
+
+    <color name="font_color">@color/white</color>
+    <color name="font_color_caption">@color/white_87</color>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">@color/pale_sky</color>
+    <color name="primary_dark">@color/shark</color>
+    <color name="accent">@color/fiord</color>
+
+    <color name="font_color">@color/black_87</color>
+    <color name="font_color_caption">@color/black_60</color>
+</resources>

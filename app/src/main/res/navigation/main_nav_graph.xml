@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/searchFeatureFragment">
+    <fragment
+        android:id="@+id/searchFeatureFragment"
+        android:name="com.nikitin.ui_first_feature.FirstFeatureFragment"
+        android:label="SearchFeatureFragment"/>
+    <fragment
+        android:id="@+id/detailsFeatureFragment"
+        android:name="com.nikitin.ui_second_feature.SecondFeatureFragment"
+        android:label="DetailsFeatureFragment">
+        <deepLink
+            app:uri="@string/feature_second_deep_link">
+        </deepLink>
+    </fragment>
+</navigation>
