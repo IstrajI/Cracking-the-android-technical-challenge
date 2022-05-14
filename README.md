@@ -22,6 +22,6 @@ This project was done by simplyfing my another project wich was done as a techni
 
 ### How to use it
 Just revert last commit, start creating your own modules from renaming the existing ones. It's better to start in that direction, case modules of the upper layer deppends on modules of the down layer. Core -> Datasource -> Domain -> UI-Components -> Features -> App.
-Commit files of each module independently. Don't forget to change time and authority by git ammend. Also take this guide on [more complex operations on git history](http://git-scm.com/book/en/v2/Git-Tools-Rewriting-History). Make this project look as your own and save time for more usefull things!
+Commit files of each module independently. Don't forget to change time and authority by [git ammend](https://stackoverflow.com/questions/454734/how-can-one-change-the-timestamp-of-an-old-commit-in-git). Also take this guide on [more complex operations on git history](http://git-scm.com/book/en/v2/Git-Tools-Rewriting-History). Make this project look as your own and save time for more usefull things!
 
 This template is open for use to everyone. But I must warn, it also could be improved with better abstraction between layers. More over feature navigation is better to replace with custom one if your project would contain deeplinks. Use it if you like, but no warranty. 
