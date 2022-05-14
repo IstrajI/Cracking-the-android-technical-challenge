@@ -1,10 +1,10 @@
-# Android Feature Module Architecture
-### Summary
-Example of multimodule complex android architecture, wich is ready to use in a big projects
+# Cracking the Android Technical Challenge
+## Template project
+We often hear from companies that their technical challenge "wouldn't require more than 1 day". Now it really would be so. With this Cracking the android technical challenge repository you could save time on boring modulurasing and initializing all nessessary dependencies and go strait to the business logic and ui.
 
-API: [https://developer.github.com/v3/search](https://developer.github.com/v3/search).
+This template challenge covers 90% of technical challenges base module setup based on my experience. Actually, the level of abstraction is more suitable for big projects. It did so to demonstrate the skills of creating complex architecture. And it could also be used to start with home projects. It includes all that is needed to start creating REST application. 
 
-### What were used
+### Detailed tech stack
 * Kotlin
 * MVVM
 * LiveData
@@ -13,26 +13,10 @@ API: [https://developer.github.com/v3/search](https://developer.github.com/v3/se
 * Navigation Components
 * Retrofit2
 * Single Activity Architecture
+* Feature Architecture
+* Multimodule architecture
+* Cooroutines
 * Custom Fonts
 * Light/Dark theme
 
-### Architecture
-The app has following packages:
-
-* app - as an entry point, di, and root activity
-* ui-search - search functionality
-* ui-components - common components for ui-feature modules
-* domain - layer with bisiness logic for orchestration of the datasources
-* datasource - sources of data, for the challenge only network
-* core - module for common of all the modules
-
-### Screenshots
-<div id="screenshot3">    
-    <img src="https://user-images.githubusercontent.com/9091709/166574114-1797d00d-2e0b-4eee-ac06-a7f9eb040c23.jpg"  width="432" height="936"/>
-    <img src="https://user-images.githubusercontent.com/9091709/166574118-45f71a09-7044-4618-ab7c-45550773374a.jpg"  width="432" height="936"/>
-</div>
-
-<div id="screenshot3">
-    <img src="https://user-images.githubusercontent.com/9091709/166574122-64bd63a9-cd99-4c48-a24c-f636c134040d.jpg"  width="432" height="936"/>
-    <img src="https://user-images.githubusercontent.com/9091709/166574124-8ff9577d-1f72-4d7c-bdb7-7b447950b796.jpg"  width="432" height="936"/>
-</div>
+This template is open for use to everyone. But I must warn, it also could be improved with better abstraction between layers. More over feature navigation is better to replace with custom one if your project would contain deeplinks. Use it if you like, but no warranty. 
